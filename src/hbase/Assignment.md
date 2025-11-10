@@ -36,20 +36,22 @@ Here are some additional tips:
     * Delete individual column values in a row:
 
         ```
-        WRITE EXAMPLE COMMAND HERE
+         delete 'table_name', 'row_key', 'column_family:qualifier'
+         example from Day 1 practice : delete 'wiki', 'Home', 'text:content'
         ```
 
     * Delete an entire row
 
         ```
-        WRITE EXAMPLE COMMAND HERE
+        deleteall 'table_name', 'row_key'
+        General example: deleteall 'users', 'user1'
         ```
 
 
 2. Bookmark the HBase API documentation for the version of HBase you’re using.
 
     ```
-    WRITE URL HERE
+    https://hbase.apache.org/apidocs/index.html
     ```
 
 ### Part 3 - Create a family database
